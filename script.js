@@ -1,3 +1,4 @@
+// Setup Event Listener for Page Load
 document.addEventListener('DOMContentLoaded', () => {
   // Select DOM Elements
   const addButton = document.getElementById('add-task-btn');
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Create a new button element for removing the task
       const removeButton = document.createElement('button');
       removeButton.textContent = "Remove";
-      removeButton.className = 'remove-btn'; // Using className to set the class
+      removeButton.classList.add('remove-btn'); // Using classList.add to set the class
 
       // Assign an onclick event to the remove button to remove the li element from taskList
       removeButton.onclick = () => {
